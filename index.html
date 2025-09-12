@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engint - Consulenza Direzionale e Gestionale</title>
+    <link rel="stylesheet" href="modern-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="img/logo.png" alt="Engint Logo" class="logo">
+                <span class="brand-text">Esperienza, Sostenibilità, Flessibilità</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#storia" class="nav-link">La Nostra Storia</a>
+                <a href="#mission" class="nav-link">Mission</a>
+                <a href="#servizi" class="nav-link">Servizi</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contatti" class="nav-link">Contatti</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <img src="img/fotoCimolai.jpg" alt="Progetto Cimolai" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">ENGINT</h1>
+            <p class="hero-subtitle">Consulenza direzionale e gestionale per il settore delle costruzioni</p>
+            <a href="#storia" class="hero-cta">
+                <span>Scopri di più</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l3 3 7-7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- La Nostra Storia -->
+    <section id="storia" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>La nostra storia</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="storia-content">
+                <div class="storia-text">
+                    <p class="lead">
+                        <strong>ENGINT</strong> è una società di consulenza direzionale e gestionale composta da una rete di professionisti.
+                    </p>
+                    <p>
+                        <strong>Il nostro obiettivo</strong> è di confrontarci adeguatamente con il forte senso di precarietà del settore, il quale ha subito negli ultimi anni mutamenti radicali in termini di normative e di regolarità delle commesse.
+                    </p>
+                    <p>
+                        Ciò ha portato a una riorganizzazione delle imprese in strutture più snelle in grado di superare agilmente eventuali periodi di scarse acquisizioni. Di contro, al momento della cantierizzazione dell'appalto aggiudicato, la stessa snellezza comporta un sottodimensionamento della forza necessaria alla gestione della commessa con tutto ciò che ne consegue in termini <strong>temporali ed economici</strong>.
+                    </p>
+                    <p>
+                        <strong>In questo contesto</strong> si inserisce la nostra proposta di collaborazione che consiste nel fornire supporto tecnico-amministrativo alla direzione tecnica di cantiere, senza stravolgere l'organizzazione consolidata dell'impresa, ma bensì permettendo alla stessa di creare in maniera ottimale lo staff preposto alla conduzione dell'appalto aggiudicato e di permettere una gestione del cantiere tanto efficace quanto efficiente.
+                    </p>
+                    <a href="#contatti" class="btn btn-primary">Contattaci</a>
+                </div>
+                <div class="storia-image">
+                    <img src="img/fiumicino.jpg" alt="Progetto Fiumicino" class="floating-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section id="mission" class="section section-alt">
+        <div class="container">
+            <div class="mission-content">
+                <div class="mission-image">
+                    <img src="img/fiumicino.jpg" alt="Progetto edilizio" class="floating-image">
+                </div>
+                <div class="mission-text">
+                    <h2>Mission</h2>
+                    <div class="section-line"></div>
+                    <p>
+                        Fornire un valido supporto <strong>tecnico</strong> nella gestione contrattuale delle commesse dal momento 
+                        dell'aggiudicazione dell'appalto fino al collaudo e consegna definitiva dell'opera attraverso una 
+                        pianificazione metodologica che sia controllata e flessibile.
+                    </p>
+                    <p>
+                        Lavoriamo a stretto contatto con i clienti e con le imprese individuando 
+                        <strong>le strategie</strong> su misura per la realizzazione del progetto, focalizzati all'ottenimento 
+                        di risultati concreti e misurabili.
+                    </p>
+                    <a href="#storia" class="btn btn-outline">La Storia</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servizi -->
+    <section id="servizi" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>I nostri servizi</h2>
+                <div class="section-line"></div>
+                <p>Soluzioni complete per la gestione dei tuoi progetti</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="icons/Pianificazione-3.png" alt="Pianificazione commessa">
+                    </div>
+                    <h3>Pianificazione commessa</h3>
+                    <p>Pianificazione delle risorse necessarie per la realizzazione dell'opera.</p>
+                    <button class="service-toggle">
+                        <span>Scopri</span>
+                        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="service-details">
+                        <ul>
+                            <li>Esame e verifica documentazione progettuale e contrattuale</li>
+                            <li>Individuazione eventuali anomalie</li>
+                            <li>Rilievi preliminari del sito</li>
+                            <li>Definizione della WBS</li>
+                            <li>Programma dei lavori</li>
+                            <li>Curva S</li>
+                            <li>Piano della manodopera e dimensionamento organico</li>
+                            <li>Piano dei mezzi e attrezzature</li>
+                            <li>Piano degli acquisti</li>
+                            <li>Monitoraggio dei tempi di esecuzione</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="icons/gare-d-appalto-2.png" alt="Gare d'appalto">
+                    </div>
+                    <h3>Gare d'appalto</h3>
+                    <p>Assistenza alla predisposizione della documentazione dell'offerta di gara.</p>
+                    <button class="service-toggle">
+                        <span>Scopri</span>
+                        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="service-details">
+                        <ul>
+                            <li>Monitoraggio bandi</li>
+                            <li>Esame dei documenti di gara</li>
+                            <li>Verifica dei requisiti</li>
+                            <li>Predisposizione delle stime</li>
+                            <li>Predisposizione dell'offerta tecnica ed economica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="icons/ico-tecnico-quartiere-2.png" alt="Ufficio Tecnico">
+                    </div>
+                    <h3>Ufficio Tecnico cantiere</h3>
+                    <p>Organizzazione elaborati di dettaglio per le maestranze.</p>
+                    <button class="service-toggle">
+                        <span>Scopri</span>
+                        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="service-details">
+                        <ul>
+                            <li>Predisposizione elaborati grafici di cantiere</li>
+                            <li>Predisposizione schede tecniche dei materiali</li>
+                            <li>Controllo qualità e verifica delle specifiche di capitolato</li>
+                            <li>As built</li>
+                            <li>Calcoli statici</li>
+                            <li>Expediting</li>
+                            <li>Supporto per la preparazione di gare d'appalto</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="icons/sicurezza-2.png" alt="Sicurezza">
+                    </div>
+                    <h3>Sicurezza</h3>
+                    <p>Redazione di piani operativi e attività di coordinamento in cantiere.</p>
+                    <button class="service-toggle">
+                        <span>Scopri</span>
+                        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="service-details">
+                        <ul>
+                            <li>Predisposizione piani operativi</li>
+                            <li>Predisposizione DUVRI</li>
+                            <li>Coordinatore per la sicurezza in fase di progettazione e esecuzione</li>
+                            <li>Verifica periodica attrezzature e mezzi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="icons/contabilità-lavori-2.png" alt="Contabilità lavori">
+                    </div>
+                    <h3>Contabilità lavori</h3>
+                    <p>Redazione di atti contabili, monitoraggio dei costi e ricavi della commessa.</p>
+                    <button class="service-toggle">
+                        <span>Scopri</span>
+                        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="service-details">
+                        <ul>
+                            <li>Elaborazione di financial reporting package</li>
+                            <li>Contabilità attiva</li>
+                            <li>Contabilità passiva</li>
+                            <li>Controllo costi</li>
+                            <li>Computi metrici estimativi</li>
+                            <li>Stime preventive</li>
+                            <li>Budget</li>
+                            <li>Cash flow di commessa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="icons/contenzioso-3.png" alt="Gestione del contenzioso">
+                    </div>
+                    <h3>Gestione del contenzioso</h3>
+                    <p>Assistenza nell'avviamento e nella trattazione del contenzioso.</p>
+                    <button class="service-toggle">
+                        <span>Scopri</span>
+                        <svg class="toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </button>
+                    <div class="service-details">
+                        <ul>
+                            <li>Redazione riserve</li>
+                            <li>Predisposizione dei giustificativi</li>
+                            <li>Assistenza nel contraddittorio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Il Nostro Portfolio</h2>
+                <div class="section-line"></div>
+                <p>Seleziona una categoria per esplorare i nostri progetti</p>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tutti</button>
+                <button class="filter-btn" data-filter="edifici">Edifici</button>
+                <button class="filter-btn" data-filter="opere-idriche">Opere Idriche</button>
+                <button class="filter-btn" data-filter="opere-viarie">Opere Viarie</button>
+                <button class="filter-btn" data-filter="impianti">Impianti</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="edifici">
+                    <div class="portfolio-image">
+                        <img src="img/edificio1.jpg" alt="Complesso Residenziale">
+                        <div class="portfolio-overlay">
+                            <h3>Complesso Residenziale</h3>
+                            <p>Riqualificazione urbana con nuovi appartamenti</p>
+                            <button class="portfolio-btn" data-title="Complesso Residenziale" data-desc="Riqualificazione di edifici per un nuovo centro abitativo." data-img="img/edificio1.jpg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="edifici">
+                    <div class="portfolio-image">
+                        <img src="img/edificio2.jpg" alt="Palazzo Direzionale">
+                        <div class="portfolio-overlay">
+                            <h3>Palazzo Direzionale</h3>
+                            <p>Struttura moderna per uffici aziendali</p>
+                            <button class="portfolio-btn" data-title="Palazzo Direzionale" data-desc="Progetto di un edificio moderno e sostenibile per uffici aziendali." data-img="img/edificio2.jpg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="opere-idriche">
+                    <div class="portfolio-image">
+                        <img src="img/opere-idriche1.jpg" alt="Acquedotto Urbano">
+                        <div class="portfolio-overlay">
+                            <h3>Acquedotto Urbano</h3>
+                            <p>Nuova rete di distribuzione dell'acqua</p>
+                            <button class="portfolio-btn" data-title="Acquedotto Urbano" data-desc="Progettazione e realizzazione di una nuova rete idrica urbana." data-img="img/opere-idriche1.jpg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="opere-viarie">
+                    <div class="portfolio-image">
+                        <img src="img/opere-viarie1.jpg" alt="Strada Extraurbana">
+                        <div class="portfolio-overlay">
+                            <h3>Strada Extraurbana</h3>
+                            <p>Costruzione di una nuova via di comunicazione</p>
+                            <button class="portfolio-btn" data-title="Strada Extraurbana" data-desc="Progetto per la costruzione di una strada extraurbana moderna." data-img="img/opere-viarie1.jpg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="impianti">
+                    <div class="portfolio-image">
+                        <img src="img/impianti1.jpg" alt="Impianto Fotovoltaico">
+                        <div class="portfolio-overlay">
+                            <h3>Impianto Fotovoltaico</h3>
+                            <p>Energia rinnovabile per la città</p>
+                            <button class="portfolio-btn" data-title="Impianto Fotovoltaico" data-desc="Installazione di pannelli solari per la produzione di energia rinnovabile." data-img="img/impianti1.jpg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Gallery Carousel -->
+            <div class="project-gallery">
+                <div class="gallery-header">
+                    <h3>I nostri progetti</h3>
+                    <p>Esperienza, Flessibilità e Sostenibilità</p>
+                </div>
+                
+                <div class="gallery-carousel">
+                    <button class="carousel-btn prev" id="prevBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide">
+                                <img src="img/cantiere1.jpg" alt="Cantiere A">
+                                <div class="slide-info">
+                                    <h4>Cantiere A</h4>
+                                    <p>Descrizione del cantiere A...</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/cantiere2.jpg" alt="Cantiere B">
+                                <div class="slide-info">
+                                    <h4>Cantiere B</h4>
+                                    <p>Descrizione del cantiere B...</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/cantiere3.jpg" alt="Cantiere C">
+                                <div class="slide-info">
+                                    <h4>Cantiere C</h4>
+                                    <p>Descrizione del cantiere C...</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/cantiere4.jpg" alt="Cantiere D">
+                                <div class="slide-info">
+                                    <h4>Cantiere D</h4>
+                                    <p>Descrizione del cantiere D...</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/cantiere5.jpg" alt="Cantiere E">
+                                <div class="slide-info">
+                                    <h4>Cantiere E</h4>
+                                    <p>Descrizione del cantiere E...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" id="nextBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </div>
+    </section>
+
+ <!-- I Nostri Progetti -->
+
+ <section id="progetti" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>I nostri progetti</h2>
+            <div class="section-line"></div>
+            <p>Progetti di rilievo realizzati in diversi settori</p>
+        </div>
+        
+        <div class="progetti-grid">
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                        <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                </div>
+                <h3>Sistema di smistamento bagagli aeroporto Leonardo Da Vinci</h3>
+                <p>Progettazione e realizzazione del sistema automatizzato per la gestione dei bagagli presso l'aeroporto internazionale di Roma Fiumicino.</p>
+            </div>
+
+            <div class="progetto-card">
+               <!-- Icona Aereo in Volo -->
+               <div class="progetto-icon">
+                <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                  <!-- Base e archi inferiori -->
+                  <path d="M4 44 H60" />
+                  <path d="M8 44 V28 H20 V44" />
+                  <path d="M20 44 V28 H32 V44" />
+                  <path d="M32 44 V28 H44 V44" />
+                  <path d="M44 44 V28 H56 V44" />
+                  <!-- Archi medi -->
+                  <path d="M8 28 V20 H56 V28" />
+                  <path d="M16 20 V12 H48 V20" />
+                  <!-- Giro esterno curvatura -->
+                  <path d="M8 28 A28 28 0 0 1 56 28" />
+                  <path d="M16 20 A20 20 0 0 1 48 20" />
+                </svg>
+              </div>
+                <h3>Nuovo Molo C, Avancorpo - Aeroporto Leonardo Da Vinci</h3>
+                <p>Costruzione del nuovo molo per l'espansione dell'aeroporto di Fiumicino, includendo avancorpo e infrastrutture di supporto.</p>
+            </div>
+
+            <div class="progetto-card">
+                <!-- Icona Fiume -->
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Linea ondulata doppia a rappresentare un fiume -->
+                    <path d="M2 6 C6 8, 4 14, 8 16 S14 14, 18 16 S22 14, 22 18" />
+                    <path d="M2 10 C6 12, 4 18, 8 20 S14 18, 18 20 S22 18, 22 22" stroke-opacity="0.6"/>
+                    </svg>
+                </div>
+                <h3>National Flood Relief Project for Birkirkara</h3>
+                <p>Progetto di prevenzione delle inondazioni per la città di Birkirkara, Malta, con sistemi di drenaggio e protezione idraulica.</p>
+            </div>
+
+            <div class="progetto-card">
+                <!-- Icona Fiume -->
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Linea ondulata doppia a rappresentare un fiume -->
+                    <path d="M2 6 C6 8, 4 14, 8 16 S14 14, 18 16 S22 14, 22 18" />
+                    <path d="M2 10 C6 12, 4 18, 8 20 S14 18, 18 20 S22 18, 22 22" stroke-opacity="0.6"/>
+                    </svg>
+                </div>                           
+                <h3>National Flood Relief Project for Zebbug</h3>
+                <p>Sistema integrato di controllo delle acque per la protezione dalle inondazioni nella zona di Zebbug, Malta.</p>
+            </div>
+
+            <div class="progetto-card">
+                <!-- Icona Fiume -->
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Linea ondulata doppia a rappresentare un fiume -->
+                    <path d="M2 6 C6 8, 4 14, 8 16 S14 14, 18 16 S22 14, 22 18" />
+                    <path d="M2 10 C6 12, 4 18, 8 20 S14 18, 18 20 S22 18, 22 22" stroke-opacity="0.6"/>
+                    </svg>
+                </div>                
+                <h3>National Flood Relief Project for Zabbar-Mscala</h3>
+                <p>Infrastrutture di drenaggio e controllo delle acque meteoriche per le aree di Zabbar e Mscala, Malta.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2c1.3 0 1.9.5 2.5 1"/>
+                        <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/>
+                        <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/>
+                        <path d="M12 10v4"/>
+                        <path d="M12 2v3"/>
+                    </svg>
+                </div>
+                <h3>Khasab Port maintenance works</h3>
+                <p>Lavori di manutenzione e riqualificazione delle infrastrutture portuali di Khasab, Oman.</p>
+            </div>
+
+            <div class="progetto-card">
+                <!-- Icona Roccia -->
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 16l4-4 2 2 3-3 4 4 2-2 3 3v3H3v-3z"/>
+                    <path d="M9 16l1-3 2 1 1-2"/>
+                    </svg>
+                </div>
+                <h3>Rock fall protection scheme Dubai –Fujairah Freeway</h3>
+                <p>Sistema di protezione contro le cadute rocciose lungo l'autostrada Dubai-Fujairah negli Emirati Arabi Uniti.</p>
+            </div>
+
+            <div class="progetto-card">
+                <!-- Icona Rete Idrica / Acqua -->
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Goccia -->
+                    <path d="M12 2C8 8 7 10 7 13a5 5 0 0 0 10 0c0-3-1-5-5-11z"/>
+                    </svg>
+                </div>
+                <h3>Protection schemes of the Wadi Al Jifnain and Al Ansab</h3>
+                <p>Progetti di protezione idrogeologica per i wadi Al Jifnain e Al Ansab in Oman, contro erosione e inondazioni.</p>
+            </div>
+
+            <div class="progetto-card">
+                <!-- Icona Acquedotto -->
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Base/terreno -->
+                    <path d="M2 54 H62" stroke-linecap="round"/>
+                    <!-- Archi dell'acquedotto -->
+                    <path d="M6 54 V34 H18 V54" />
+                    <path d="M18 54 V34 H30 V54" />
+                    <path d="M30 54 V34 H42 V54" />
+                    <path d="M42 54 V34 H54 V54" />
+                    <!-- Copertura superiore del canale / acquedotto -->
+                    <rect x="2" y="28" width="60" height="6" rx="2" ry="2"/>
+                    <!-- Goccia d'acqua sotto il canale (per enfatizzare acqua) -->
+                    <path d="M32 28 C32 34, 28 34, 28 38 Q32 42, 36 38 C36 34, 32 34, 32 28 Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Realizzazione dell'acquedotto Montescuro Ovest</h3>
+                <p>Progetto per la costruzione di infrastrutture idriche nell'area di Montescuro Ovest, per il miglioramento della rete di distribuzione.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <!-- Icona “P parcheggio” -->
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="2" width="20" height="20" rx="4" ry="4"/>
+                      <text x="12" y="16" text-anchor="middle" font-size="12" font-family="Arial, sans-serif">P</text>
+                    </svg>
+                  </div>                  
+                <h3>Parcheggio interrato multipiano in piazza V.E.Orlando -Palermo</h3>
+                <p>Costruzione di una struttura di parcheggio sotterranea multipiano nel centro storico di Palermo per decongestionare il traffico urbano.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Linea ondulata doppia a rappresentare un fiume -->
+                    <path d="M2 6 C6 8, 4 14, 8 16 S14 14, 18 16 S22 14, 22 18" />
+                    <path d="M2 10 C6 12, 4 18, 8 20 S14 18, 18 20 S22 18, 22 22" stroke-opacity="0.6"/>
+                    </svg>
+                </div>    
+                <h3>Rete irrigua nel comune di Lentini</h3>
+                <p>Sviluppo e realizzazione della rete di irrigazione per l'area agricola del comune di Lentini, Sicilia.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                </div>
+                <h3>Impianto di trattamento e termovalorizzazione degli RSU di Palermo</h3>
+                <p>Progetto per la realizzazione di un impianto integrato per il trattamento e la termovalorizzazione dei rifiuti solidi urbani di Palermo.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Linea ondulata doppia a rappresentare un fiume -->
+                    <path d="M2 6 C6 8, 4 14, 8 16 S14 14, 18 16 S22 14, 22 18" />
+                    <path d="M2 10 C6 12, 4 18, 8 20 S14 18, 18 20 S22 18, 22 22" stroke-opacity="0.6"/>
+                    </svg>
+                </div>    
+                <h3>Depuratore di Castelvetrano</h3>
+                <p>Realizzazione di un impianto di depurazione delle acque reflue per il comune di Castelvetrano, Sicilia.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Base/terreno -->
+                    <path d="M2 54 H62" stroke-linecap="round"/>
+                    <!-- Archi dell'acquedotto -->
+                    <path d="M6 54 V34 H18 V54" />
+                    <path d="M18 54 V34 H30 V54" />
+                    <path d="M30 54 V34 H42 V54" />
+                    <path d="M42 54 V34 H54 V54" />
+                    <!-- Copertura superiore del canale / acquedotto -->
+                    <rect x="2" y="28" width="60" height="6" rx="2" ry="2"/>
+                    <!-- Goccia d'acqua sotto il canale (per enfatizzare acqua) -->
+                    <path d="M32 28 C32 34, 28 34, 28 38 Q32 42, 36 38 C36 34, 32 34, 32 28 Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h3>Rifacimento acquedotto Inici-Trapani</h3>
+                <p>Riqualificazione e ammodernamento della rete acquedottistica che collega Inici a Trapani per migliorare l'efficienza idrica.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 20 C16 24, 10 40, 32 44 S56 40, 60 30" />
+                      <path d="M4 28 C16 32, 10 48, 32 52 S56 48, 60 38" stroke-opacity="0.7"/>
+                    </svg>
+                  </div>
+                <h3>Schema irriguo Cavazzini 1 -Rete Alta</h3>
+                <p>Progetto per la realizzazione della rete irrigua ad alta pressione del consorzio Cavazzini 1 per l'agricoltura intensiva.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 20 C16 24, 10 40, 32 44 S56 40, 60 30" />
+                      <path d="M4 28 C16 32, 10 48, 32 52 S56 48, 60 38" stroke-opacity="0.7"/>
+                    </svg>
+                  </div>
+                <h3>Rete irrigua dipendente dall'invaso Disueri</h3>
+                <p>Sviluppo della rete di distribuzione irrigua alimentata dall'invaso artificiale di Disueri per il territorio circostante.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 20 C16 24, 10 40, 32 44 S56 40, 60 30" />
+                      <path d="M4 28 C16 32, 10 48, 32 52 S56 48, 60 38" stroke-opacity="0.7"/>
+                    </svg>
+                  </div>
+                <h3>Ristrutturazione ed adeguamento funzionale del Canale Gerbini</h3>
+                <p>Lavori di ristrutturazione e modernizzazione del Canale Gerbini per migliorare la gestione delle acque irrigue.</p>
+            </div>
+
+            <div class="progetto-card">
+                <!-- Icona Tombino -->
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Contorno circolare del tombino -->
+                    <circle cx="12" cy="12" r="10" />
+                    <!-- Pattern a griglia / fori sul coperchio -->
+                    <line x1="6" y1="12" x2="18" y2="12" />
+                    <line x1="12" y1="6" x2="12" y2="18" />
+                    <line x1="8.5" y1="8.5" x2="15.5" y2="15.5" />
+                    <line x1="15.5" y1="8.5" x2="8.5" y2="15.5" />
+                    </svg>
+                </div>
+                <h3>Primo stralcio rete fognaria della fascia costiera del comune di Siracusa</h3>
+                <p>Primo lotto per la realizzazione della rete fognaria lungo la costa del comune di Siracusa, Sicilia.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3">
+                      <!-- Manico -->
+                      <rect x="28" y="20" width="8" height="30" rx="2" ry="2" />
+                      <!-- Testa del martello -->
+                      <path d="M42 18 L54 18 L54 10 L46 10 L32 22" />
+                      <path d="M22 18 L10 18 L10 26 L18 26 L32 14" />
+                      <!-- Punta del manico in basso -->
+                      <path d="M30 50 L34 50 L34 62 L30 62 Z" />
+                    </svg>
+                  </div>
+                <h3>Ristrutturazione ed adeguamento funzionale del Canale Cavazzini</h3>
+                <p>Progetti di ammodernamento e adeguamento delle infrastrutture del Canale Cavazzini per ottimizzare la distribuzione idrica.</p>
+            </div>
+
+            <div class="progetto-card">
+                <!-- Icona Rettilineo Stradale -->
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Strada con linea centrale tratteggiata -->
+                    <path d="M4 22 L10 2 L14 2 L20 22" />
+                    <line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="2,2"/>
+                    </svg>
+            </div>
+                <h3>Ammodernamento del tratto di SS115 tra Palma di Montechiaro e Licata</h3>
+                <p>Lavori di ammodernamento e miglioramento della strada statale 115 nel tratto tra Palma di Montechiaro e Licata.</p>
+            </div>
+
+            <div class="progetto-card">
+                <div class="progetto-icon">
+                    <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 20 C16 24, 10 40, 32 44 S56 40, 60 30" />
+                      <path d="M4 28 C16 32, 10 48, 32 52 S56 48, 60 38" stroke-opacity="0.7"/>
+                    </svg>
+                  </div>
+                <h3>Realizzazione della rete irrigua S.Leonardo Ovest 3° lotto in provincia di Palermo</h3>
+                <p>Terzo lotto per il completamento della rete irrigua di San Leonardo Ovest nella provincia di Palermo per l'agricoltura locale.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Team -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>I Nostri Professionisti</h2>
+                <div class="section-line"></div>
+                <p>Esperienza e Competenza al Servizio dei Nostri Progetti</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-content">
+                        <h3>FABIO VARGIU</h3>
+                        <p class="member-role">Project Manager, Contract Manager</p>
+                        <p class="member-description">
+                            Laureato in Ingegneria delle strutture all'Università di Cagliari, da oltre 25 anni si occupa di gestione di commesse
+                            con forte propensione alla pianificazione e al controllo costi.
+                            Nella prima fase della carriera è stato direttore di cantiere di diverse opere idrauliche e infrastrutturali e di recente è stato impegnato
+                            nella realizzazione del nuovo Molo imbarchi 
+                            dell'aeroporto di Fiumicino per conto della Cimolai SpA.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-content">
+                        <h3>GIORGIA BAMONTI</h3>
+                        <p class="member-role">Planner, Technical Supervisor</p>
+                        <p class="member-description">
+                            Laureata in Architettura all'Università di Roma ha già maturato importanti esperienze
+                            sia nella gestione della progettazione costruttiva di cantiere che su tutto ciò che coinvolge l'andamento 
+                            funzionale e organizzativo dei cantieri.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contatti" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contatti</h2>
+                <div class="section-line"></div>
+                <p>Per qualsiasi informazione lasciate la vostra mail</p>
+            </div>
+            
+            <div class="contact-content">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="nome" name="nome" placeholder="Nome*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="E-Mail*" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="custom-select">
+                            <select id="oggetto" name="oggetto" required>
+                                <option value="">Seleziona oggetto</option>
+                                <option value="richiesta-informazioni">Richiedi informazioni</option>
+                                <option value="invio-cv">Invia CV</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="file-upload" class="form-group file-upload hidden">
+                        <label for="cv">Allega il tuo CV (PDF):</label>
+                        <input type="file" id="cv" name="cv" accept="application/pdf">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="messaggio" name="messaggio" placeholder="Il tuo messaggio..." rows="5"></textarea>
+                    </div>
+
+                    <button type="button" id="send-email" class="btn btn-primary">
+                        <span>Invia</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z"/>
+                        </svg>
+                    </button>
+                </form>
+                
+                <div class="contact-info">
+                    <p>Verrete ricontattati appena riceveremo la vostra mail.</p>
+                    <p>Per inviare il vostro CV selezionate "Invia CV" nella casella "Oggetto".</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="modern-script.js"></script>
+</body>
+</html>
