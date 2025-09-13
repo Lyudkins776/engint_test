@@ -1632,4 +1632,188 @@ p {
         page-break-inside: avoid;
         padding: 1rem 0;
     }
+
+    .footer {
+        background: var(--background-secondary);
+        border-top: 1px solid var(--border-color);
+        margin-top: 5rem;
+    }
+    
+    .footer-content {
+        padding: 3rem 0 2rem;
+    }
+    
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2.5rem;
+    }
+    
+    .footer-section h4 {
+        color: var(--text-primary);
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+    
+    .footer-section h4::after {
+        content: '';
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        width: 30px;
+        height: 2px;
+        background: var(--gradient-primary);
+        border-radius: 1px;
+    }
+    
+    .footer-info p {
+        color: var(--text-secondary);
+        margin-bottom: 0.75rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .footer-info a {
+        color: var(--primary-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-info a:hover {
+        color: var(--accent-color);
+    }
+    
+    .footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-links li {
+        margin-bottom: 0.75rem;
+    }
+    
+    .footer-links a {
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        position: relative;
+        padding-left: 1rem;
+    }
+    
+    .footer-links a::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: var(--primary-color);
+        font-weight: bold;
+        transition: transform 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+        color: var(--primary-color);
+        padding-left: 1.25rem;
+    }
+    
+    .footer-links a:hover::before {
+        transform: scale(1.2);
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: var(--background-card);
+        color: var(--text-secondary);
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+        background: var(--primary-color);
+        color: white;
+        border-color: var(--primary-color);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-medium);
+    }
+    
+    .footer-bottom {
+        background: var(--background-card);
+        border-top: 1px solid var(--border-color);
+        padding: 1.5rem 0;
+    }
+    
+    .footer-copyright {
+        text-align: center;
+    }
+    
+    .footer-copyright p {
+        color: var(--text-tertiary);
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+        .footer-content {
+            padding: 2rem 0 1.5rem;
+        }
+        
+        .footer-grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .footer-section h4::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .footer-links a {
+            padding-left: 0;
+        }
+        
+        .footer-links a::before {
+            display: none;
+        }
+        
+        .footer-links a:hover {
+            padding-left: 0;
+        }
+        
+        .social-links {
+            justify-content: center;
+        }
+        
+        .footer-bottom {
+            padding: 1rem 0;
+        }
+        
+        .footer-copyright p {
+            font-size: 0.8rem;
+        }
+    }
+    
+    /* Dark theme adjustments */
+    @media (prefers-color-scheme: dark) {
+        .social-links a svg {
+            filter: brightness(0.9);
+        }
+        
+        .social-links a:hover svg {
+            filter: brightness(1);
+        }
+    }
 }
