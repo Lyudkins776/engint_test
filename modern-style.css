@@ -992,9 +992,9 @@ p {
 /* Footer Styles - Add this section to your main CSS */
 
 .footer {
-    background: var(--background-secondary);
+    background: var(--background-primary);
     border-top: 1px solid var(--border-color);
-    margin-top: 5rem;
+    margin-top: 0rem;
 }
 
 .footer-content {
