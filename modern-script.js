@@ -57,9 +57,19 @@ class EngintWebsite {
             
             // Close navigation when clicking on links
             navMenu.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', () => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
                     if (this.isMobile) this.closeNavigation();
-                    this.smoothScrollTo(link.getAttribute('href'));
+                    
+                    const target = link.getAttribute('href');
+                    if (target && target.startsWith('#')) {
+                        this.smoothScrollTo(target);
+                        
+                        // Aggiorna URL senza reload
+                        if (history.pushState) {
+                            history.pushState(null, null, target);
+                        }
+                    }
                 });
             });
         }
@@ -68,7 +78,20 @@ class EngintWebsite {
         document.querySelectorAll('a[href^="#"]').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
-                this.smoothScrollTo(link.getAttribute('href'));
+                const target = link.getAttribute('href');
+                if (target) {
+                    this.smoothScrollTo(target);
+                    
+                    // Chiudi menu mobile se aperto
+                    if (this.navigation.isOpen) {
+                        this.closeNavigation();
+                    }
+                    
+                    // Aggiorna URL
+                    if (history.pushState) {
+                        history.pushState(null, null, target);
+                    }
+                }
             });
         });
         
@@ -88,7 +111,6 @@ class EngintWebsite {
         });
         
         // Contact form
-        const contactForm = document.getElementById('contact-form');
         const sendEmailBtn = document.getElementById('send-email');
         const objettoSelect = document.getElementById('oggetto');
         
@@ -112,6 +134,22 @@ class EngintWebsite {
             if (e.key === 'Escape') {
                 this.closeModal();
                 if (this.navigation.isOpen) this.closeNavigation();
+            }
+        });
+        
+        // Gestione hash URL al caricamento
+        window.addEventListener('load', () => {
+            if (window.location.hash) {
+                setTimeout(() => {
+                    this.smoothScrollTo(window.location.hash);
+                }, 100);
+            }
+        });
+        
+        // Gestione cambiamenti hash
+        window.addEventListener('hashchange', () => {
+            if (window.location.hash) {
+                this.smoothScrollTo(window.location.hash);
             }
         });
     }
@@ -206,7 +244,7 @@ class EngintWebsite {
         const navLinks = document.querySelectorAll('.nav-link');
         
         let current = '';
-        const scrollY = window.pageYOffset + 100;
+        const scrollY = window.pageYOffset + 150; // Aumentato offset per migliore rilevamento
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -218,7 +256,11 @@ class EngintWebsite {
         });
         
         navLinks.forEach(link => {
-            link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                const sectionId = href.substring(1);
+                link.classList.toggle('active', sectionId === current);
+            }
         });
     }
 
@@ -244,10 +286,13 @@ class EngintWebsite {
         this.setupCarousel();
     }
 
-    // Smooth Scrolling
+    // Smooth Scrolling - CORRETTO
     smoothScrollTo(target) {
         const element = document.querySelector(target);
-        if (!element) return;
+        if (!element) {
+            console.warn(`Elemento ${target} non trovato`);
+            return;
+        }
         
         const offsetTop = element.offsetTop - 80; // Account for fixed navbar
         
