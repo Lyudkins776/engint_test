@@ -270,85 +270,72 @@
     </section>
 
     <!-- Portfolio -->
-    <section id="portfolio" class="section section-alt">
-        <div class="container">
-            <div class="section-header">
-                <h2>Il nostro portfolio</h2>
-                <div class="section-line"></div>
-                <p>Seleziona una categoria per esplorare i nostri progetti</p>
+    <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="edifici">
+            <div class="portfolio-image">
+                <img src="img/edificio.jpeg" alt="Molo-E Fiumicino">
+                <div class="portfolio-overlay">
+                    <h3>Molo-E Fiumicino</h3>
+                    <p>Opere edilizie presso l'aeroporto di Roma Fiumicino</p>
+                    <button class="portfolio-btn" data-title="Molo-E Fiumicino" data-desc="Opere edilizie presso l'aeroporto di Roma Fiumicino" data-img="img/edificio.jpeg">
+                        Dettagli
+                    </button>
+                </div>
             </div>
-
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">Tutti</button>
-                <button class="filter-btn" data-filter="edifici">Edifici</button>
-                <button class="filter-btn" data-filter="opere-idriche">Opere Idriche</button>
-                <button class="filter-btn" data-filter="opere-viarie">Opere Viarie</button>
-                <button class="filter-btn" data-filter="impianti">Impianti</button>
-            </div>
-
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="edifici">
-                    <div class="portfolio-image">
-                        <img src="img/edificio.jpeg" alt="Molo-E Fiumicino">
-                        <div class="portfolio-overlay">
-                            <h3>Molo-E Fiumicino</h3>
-                            <p>Opere edilizie presso l'aeroporto di Roma Fiumicino</p>
-                            <button class="portfolio-btn" data-title="Complesso Residenziale" data-desc="Opere edilizie presso l'aeroporto di Roma Fiumicino" data-img="img/edificio1.jpg">
-                                Dettagli
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-category="edifici">
-                    <div class="portfolio-image">
-                        <img src="img/Parcheggio.jpeg" alt="Parcheggio sotterraneo">
-                        <div class="Parcheggio Tribunale di Palermo">
-                            <h3>Parcheggio Sotterraneo</h3>
-                            <p>Parcheggio Piazza Vittorio E. Orlando a Palermo</p>
-                            <button class="portfolio-btn" data-title="Parcheggio Tribunale di Palermo" data-desc="Parcheggio Piazza Vittorio E. Orlando a Palermo" data-img="img/edificio2.jpg">
-                                Dettagli
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-category="opere-idriche">
-                    <div class="portfolio-image">
-                        <img src="img/rete_idrica_ct.jpeg" alt="Catania rete alta">
-                        <div class="portfolio-overlay">
-                            <h3>Catania rete alta</h3>
-                            <button class="portfolio-btn" data-title="Catania rete alta">
-                                Dettagli
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-category="opere-viarie">
-                    <div class="portfolio-image">
-                        <img src="img/imbocco gallerie.jpg" alt="Imbocco Gallerie">
-                        <div class="portfolio-overlay">
-                            <h3>Imbocco Gallerie</h3>
+        </div>
     
-                            <button class="portfolio-btn" data-title="Imbocco Gallerie">
-                                Dettagli
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item" data-category="impianti">
-                    <div class="portfolio-image">
-                        <img src="img/impianti.jpeg" alt="Impianto">
-                            <h3>Impianto</h3>
-                            <button class="portfolio-btn" data-title="Impianto">
-                                Dettagli
-                            </button>
-                        </div>
-                    </div>
+        <div class="portfolio-item" data-category="edifici">
+            <div class="portfolio-image">
+                <img src="img/Parcheggio.jpeg" alt="Parcheggio sotterraneo">
+                <div class="portfolio-overlay">
+                    <h3>Parcheggio Sotterraneo</h3>
+                    <p>Parcheggio Piazza Vittorio E. Orlando a Palermo</p>
+                    <button class="portfolio-btn" data-title="Parcheggio Tribunale di Palermo" data-desc="Parcheggio Piazza Vittorio E. Orlando a Palermo" data-img="img/Parcheggio.jpeg">
+                        Dettagli
+                    </button>
                 </div>
             </div>
+        </div>
+    
+        <div class="portfolio-item" data-category="opere-idriche">
+            <div class="portfolio-image">
+                <img src="img/rete_idrica_ct.jpeg" alt="Catania rete alta">
+                <div class="portfolio-overlay">
+                    <h3>Catania rete alta</h3>
+                    <p>Rete idrica ad alta pressione per la città di Catania</p>
+                    <button class="portfolio-btn" data-title="Catania rete alta" data-desc="Rete idrica ad alta pressione per la città di Catania" data-img="img/rete_idrica_ct.jpeg">
+                        Dettagli
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="portfolio-item" data-category="opere-viarie">
+            <div class="portfolio-image">
+                <img src="img/imbocco gallerie.jpg" alt="Imbocco Gallerie">
+                <div class="portfolio-overlay">
+                    <h3>Imbocco Gallerie</h3>
+                    <p>Realizzazione imbocchi gallerie stradali</p>
+                    <button class="portfolio-btn" data-title="Imbocco Gallerie" data-desc="Realizzazione imbocchi gallerie stradali" data-img="img/imbocco gallerie.jpg">
+                        Dettagli
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="portfolio-item" data-category="impianti">
+            <div class="portfolio-image">
+                <img src="img/impianti.jpeg" alt="Impianto">
+                <div class="portfolio-overlay">
+                    <h3>Impianto</h3>
+                    <p>Realizzazione impianti industriali</p>
+                    <button class="portfolio-btn" data-title="Impianto" data-desc="Realizzazione impianti industriali" data-img="img/impianti.jpeg">
+                        Dettagli
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
             <!-- Project Gallery Carousel -->
             <div class="project-gallery">
