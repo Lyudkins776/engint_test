@@ -819,14 +819,16 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
         }
     });
 }
-// Scroll to bottom button
-const scrollBtn = document.getElementById("scroll-bottom");
-
-if (scrollBtn) {
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: "smooth"
-    });
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollBtn = document.getElementById("scroll-bottom");
+  
+    if (scrollBtn) {
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth"
+        });
+      });
+    }
   });
-}
+  
