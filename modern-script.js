@@ -821,14 +821,15 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
 }
 document.addEventListener("DOMContentLoaded", () => {
     const scrollBtn = document.getElementById("scroll-bottom");
+    const footer = document.querySelector("footer");
   
-    if (scrollBtn) {
+    if (scrollBtn && footer) {
       scrollBtn.addEventListener("click", () => {
-        window.scrollTo({
-          top: document.body.scrollHeight,
-          behavior: "smooth"
-        });
+        console.log("Scrolling verso footer...");
+        footer.scrollIntoView({ behavior: "smooth", block: "start" });
       });
+    } else {
+      console.error("Bottone o footer non trovato!");
     }
   });
   
