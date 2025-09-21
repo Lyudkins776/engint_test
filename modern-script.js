@@ -825,11 +825,18 @@ document.addEventListener("DOMContentLoaded", () => {
   
     if (scrollBtn && footer) {
       scrollBtn.addEventListener("click", () => {
-        console.log("Scrolling verso footer...");
-        footer.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (!scrollBtn.classList.contains("toggle")) {
+          // Scorri giù fino al footer
+          footer.scrollIntoView({ behavior: "smooth", block: "start" });
+          scrollBtn.classList.add("toggle");
+          scrollBtn.setAttribute("aria-label", "Torna su");
+        } else {
+          // Torna in cima
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          scrollBtn.classList.remove("toggle");
+          scrollBtn.setAttribute("aria-label", "Vai a fondo pagina");
+        }
       });
-    } else {
-      console.error("Bottone o footer non trovato!");
     }
   });
   
