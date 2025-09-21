@@ -2,6 +2,7 @@
  * Modern JavaScript for ENGINT Website
  * Optimized for performance and modern browser features
  */
+console.log("modern-script.js caricato");
 
 class EngintWebsite {
     constructor() {
