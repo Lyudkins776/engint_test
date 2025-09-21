@@ -270,73 +270,132 @@
     </section>
 
     <!-- Portfolio -->
-    <div class="portfolio-filters">
-        <button class="filter-btn active" data-filter="all">Tutti</button>
-        <button class="filter-btn" data-filter="edifici">Edifici</button>
-        <button class="filter-btn" data-filter="opere-idriche">Opere Idriche</button>
-        <button class="filter-btn" data-filter="opere-viarie">Opere Viarie</button>
-        <button class="filter-btn" data-filter="impianti">Impianti</button>
-    </div>
-    <div class="portfolio-grid">
-        <div class="portfolio-item" data-category="edifici">
-            <div class="portfolio-image">
-                <img src="img/edificio.jpg" alt="Nuovo Molo Fiumicino">
-                <div class="portfolio-overlay">
-                    <h3>Nuovo Molo Fiumicino</h3>
-                    <p>Costruzione del nuovo molo dell'aeroporto internazionale di Roma Fiumicino</p>
-                    <button class="portfolio-btn" data-title="Nuovo Molo Fiumicino" data-img="img/edificio.jpg">
-                        Dettagli
-                    </button>
+    <section id="portfolio" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Portfolio</h2>
+                <div class="section-line"></div>
+                <p>I nostri progetti più significativi</p>
+            </div>
+    
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">Tutti</button>
+                <button class="filter-btn" data-filter="edifici">Edifici</button>
+                <button class="filter-btn" data-filter="opere-idriche">Opere Idriche</button>
+                <button class="filter-btn" data-filter="opere-viarie">Opere Viarie</button>
+                <button class="filter-btn" data-filter="impianti">Impianti</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="edifici">
+                    <div class="portfolio-image">
+                        <img src="img/edificio.jpeg" alt="Nuovo Molo Fiumicino">
+                        <div class="portfolio-overlay">
+                            <h3>Nuovo Molo Fiumicino</h3>
+                            <p>Realizzazione del nuovo molo dell'aeroporto di Roma Fiumicino</p>
+                            <button class="portfolio-btn" data-title="Molo-E Fiumicino" data-desc="Opere edilizie presso l'aeroporto di Roma Fiumicino" data-img="img/edificio.jpeg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="portfolio-item" data-category="edifici">
+                    <div class="portfolio-image">
+                        <img src="img/Parcheggio.jpeg" alt="Parcheggio sotterraneo">
+                        <div class="portfolio-overlay">
+                            <h3>Parcheggio Sotterraneo</h3>
+                            <p>Parcheggio Piazza Vittorio E. Orlando a Palermo</p>
+                            <button class="portfolio-btn" data-title="Parcheggio Tribunale di Palermo" data-desc="Parcheggio Piazza Vittorio E. Orlando a Palermo" data-img="img/Parcheggio.jpeg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="portfolio-item" data-category="opere-idriche">
+                    <div class="portfolio-image">
+                        <img src="img/rete_idrica_ct.jpeg" alt="Catania rete alta">
+                        <div class="portfolio-overlay">
+                            <h3>Catania rete alta</h3>
+                            <p>Rete idrica ad alta pressione per la città di Catania</p>
+                            <button class="portfolio-btn" data-title="Catania rete alta" data-desc="Rete idrica ad alta pressione per la città di Catania" data-img="img/rete_idrica_ct.jpeg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="portfolio-item" data-category="opere-viarie">
+                    <div class="portfolio-image">
+                        <img src="img/imbocco gallerie.jpg" alt="Imbocco Gallerie">
+                        <div class="portfolio-overlay">
+                            <h3>Imbocco Gallerie</h3>
+                            <p>Realizzazione imbocchi gallerie stradali</p>
+                            <button class="portfolio-btn" data-title="Imbocco Gallerie" data-desc="Realizzazione imbocchi gallerie stradali" data-img="img/imbocco gallerie.jpg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="portfolio-item" data-category="impianti">
+                    <div class="portfolio-image">
+                        <img src="img/impianti.jpeg" alt="Impianto">
+                        <div class="portfolio-overlay">
+                            <h3>Impianto</h3>
+                            <p>Realizzazione impianti industriali</p>
+                            <button class="portfolio-btn" data-title="Impianto" data-desc="Realizzazione impianti industriali" data-img="img/impianti.jpeg">
+                                Dettagli
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="portfolio-item" data-category="edifici">
-            <div class="portfolio-image">
-                <img src="img/Parcheggio.jpeg" alt="Parcheggio sotterraneo">
-                <div class="portfolio-overlay">
-                    <h3>Parcheggio sotterraneo</h3>
-                    <p>Parcheggio sotterraneo Piazza Vittorio E. Orlando, Palermo</p>
-                    <button class="portfolio-btn" data-title="Palazzo Direzionale"  data-img="img/Parcheggio.jpg">
-                        Dettagli
+    
+            <!-- Project Gallery Carousel -->
+            <div class="project-gallery">
+                <div class="gallery-header">
+                    <h3>I nostri cantieri</h3>
+                    <p>Esperienza, Flessibilità e Sostenibilità</p>
+                </div>
+                
+                <div class="gallery-carousel">
+                    <button class="carousel-btn prev" id="prevBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide">
+                                <img src="img/cantiere_a.jpeg" alt="Cantiere">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/cantiere_b.jpg" alt="Cantiere">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/cantiere_c.jpg" alt="Cantiere">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/cantiere_d.jpeg" alt="Cantiere">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-btn next" id="nextBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
                     </button>
                 </div>
+                
+                <div class="carousel-dots" id="carouselDots"></div>
             </div>
         </div>
-        <div class="portfolio-item" data-category="opere-idriche">
-            <div class="portfolio-image">
-                <img src="img/rete_idrica_ct.jpeg" alt="Catania rete alta">
-                <div class="portfolio-overlay">
-                    <h3>Catania rete alta</h3>
-                    <button class="portfolio-btn" data-title="Acquedotto Urbano" data-img="img/rete_idrica_ct.jpg">
-                        Dettagli
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-item" data-category="opere-viarie">
-            <div class="portfolio-image">
-                <img src="img/imbocco-gallerie.jpg" alt="Strada Extraurbana">
-                <div class="portfolio-overlay">
-                    <h3>Imbocco gallerie</h3>
-                    <button class="portfolio-btn" data-title="Strada Extraurbana" data-img="img/imbocco-gallerie.jpg">
-                        Dettagli
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-item" data-category="impianti">
-            <div class="portfolio-image">
-                <img src="img/impianti.jpeg" alt="Impianto">
-                <div class="portfolio-overlay">
-                    <h3>Impianto</h3>
-                    <button class="portfolio-btn" data-title="Impianto" data-img="img/impianti.jpg">
-                        Dettagli
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    </section>
+    
 
             <!-- Project Gallery Carousel -->
             <div class="project-gallery">
