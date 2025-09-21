@@ -1873,6 +1873,11 @@ p {
     transform: translateY(3px);
 }
 
+.scroll-bottom-btn.toggle .icon {
+    transform: rotate(180deg); /* freccia verso l’alto */
+  }
+  
+
 @media (max-width: 767px) {
     .scroll-bottom-btn {
         width: 40px;
