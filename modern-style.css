@@ -51,18 +51,24 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-    font-size: 16px;
+html, body {
+    height: 100%;
+    min-height: 100vh;
 }
 
 body {
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.6;
-    color: var(--text-primary);
-    background-color: var(--background-primary);
-    transition: color 0.3s ease, background-color 0.3s ease;
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
 }
 
 /* Typography */
@@ -390,11 +396,13 @@ p {
     font-weight: 600;
 }
 
-/* Services Grid */
+/* Services Grid - Correzione Allineamento */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Forza 3 colonne uguali */
     gap: 2rem;
+    align-items: start; /* Allinea le card in alto */
+    justify-items: center; /* Centra le card orizzontalmente */
 }
 
 .service-card {
@@ -404,32 +412,33 @@ p {
     box-shadow: var(--shadow-medium);
     transition: all 0.3s ease;
     border: 1px solid var(--border-color);
+    width: 100%; /* Assicura che tutte le card abbiano la stessa larghezza */
+    max-width: 350px; /* Limita la larghezza massima */
+    min-height: 280px; /* Altezza minima uniforme */
+    display: flex;
+    flex-direction: column;
 }
 
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-heavy);
-}
-
-.service-icon {
+/* Assicura che il contenuto si distribuisca uniformemente */
+.service-card .service-icon {
     margin-bottom: 1.5rem;
-}
-
-.service-icon img {
-    width: 48px;
-    height: 48px;
-    filter: brightness(0) saturate(100%) invert(45%) sepia(85%) saturate(2000%) hue-rotate(15deg);
+    flex-shrink: 0;
 }
 
 .service-card h3 {
     color: var(--text-primary);
     margin-bottom: 1rem;
     font-size: 1.3rem;
+    flex-shrink: 0;
+    min-height: 2.6rem; /* Altezza uniforme per i titoli */
+    display: flex;
+    align-items: center;
 }
 
 .service-card p {
     margin-bottom: 1.5rem;
     color: var(--text-secondary);
+    flex-grow: 1; /* Fa espandere il paragrafo per riempire lo spazio */
 }
 
 .service-toggle {
@@ -443,6 +452,8 @@ p {
     cursor: pointer;
     padding: 0.5rem 0;
     transition: all 0.3s ease;
+    margin-top: auto; /* Spinge il bottone in fondo */
+    flex-shrink: 0;
 }
 
 .service-toggle:hover {
