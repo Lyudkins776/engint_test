@@ -1835,3 +1835,53 @@ p {
         filter: brightness(1);
     }
 }
+/* Scroll to Bottom Button */
+.scroll-bottom-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease;
+    z-index: 1500;
+    opacity: 0.85;
+}
+
+.scroll-bottom-btn:hover {
+    transform: translateY(-4px) scale(1.1);
+    background: var(--accent-color);
+    opacity: 1;
+}
+
+.scroll-bottom-btn .icon {
+    width: 24px;
+    height: 24px;
+    stroke: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.scroll-bottom-btn:hover .icon {
+    transform: translateY(3px);
+}
+
+@media (max-width: 767px) {
+    .scroll-bottom-btn {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .scroll-bottom-btn .icon {
+        width: 20px;
+        height: 20px;
+    }
+}
